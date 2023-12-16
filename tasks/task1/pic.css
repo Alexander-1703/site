@@ -1,0 +1,128 @@
+/* Фон */
+.sky {
+    background: linear-gradient(to bottom right,
+    rgba(255, 250, 205, 0.7) 30%, rgba(0, 191, 255, 0.7));
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы контейнера */
+}
+
+/* Солнце */
+.sun {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 0, 0.3);
+    border-radius: 50%;
+    position: absolute; /* Позиционирование относительно родителя */
+    top: -10px; /* Прижимаем к верхнему краю */
+    left: -10px; /* Прижимаем к левому краю */
+}
+
+/* Арка */
+.arc {
+    left: 0;
+    top: 60px;
+    width: 30px;
+    height: 150px;
+    border-radius: 100px 100px 0 0; /* Задаем скругление верхних углов */
+    position: absolute;
+    border: 10px solid #ccc;
+}
+
+.arc#arc2 {
+    left: 45px;
+}
+
+.arc#arc3 {
+    left: 80px;
+}
+
+.arc#arc4 {
+    left: 150px;
+}
+
+/* Корабль */
+.ship {
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+/* Палуба */
+.deck {
+    position: absolute;
+    top: 80px;
+    left: 22px;
+    width: 45px; /* Ширина основания трапеции */
+    height: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #8B4513;
+}
+
+/* Мачта */
+.mast {
+    position: absolute;
+    top: 8px;
+    left: 45px;
+    width: 10px;
+    height: 100px;
+    background-color: #8B4513;
+}
+
+/* Парус */
+.sail {
+    position: absolute;
+    left: 55px;
+    top: 8px;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+    border-left: 50px solid #87CEEB;
+}
+
+/* Мини-парус */
+.mini-sail {
+    position: absolute;
+    left: 45px;
+    top: -4px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #FF4500;
+}
+
+/* Элемент волны */
+.wave-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Делаем круглую форму */
+    position: absolute; /* Абсолютное позиционирование */
+    background: linear-gradient(to top left, #6495ED 20%, #E0FFFF);
+}
+
+.wave-circle#wave1 {
+    left: -10px;
+    bottom: -30px;
+}
+
+.wave-circle#wave2 {
+    left: 30px;
+    bottom: -25px;
+}
+
+.wave-circle#wave3 {
+    left: 70px;
+    bottom: -40px;
+}
+
+.wave-circle#wave4 {
+    left: 130px;
+    bottom: -20px;
+}
+

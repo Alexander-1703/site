@@ -1,0 +1,168 @@
+body {
+    background: #f0f4ef;
+}
+
+.score {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+}
+
+.block {
+    float: left;
+    line-height: inherit;
+    font-size: 20px;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-right: 6vh;
+    background-color: lightgreen;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.nouserselect {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.button {
+    line-height: inherit;
+    font-size: 20px;
+    color: black;
+    width: auto;
+    padding: 10px 30px;
+    text-align: center;
+    border: none;
+    background-color: lightgreen;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #61ea61;
+}
+
+.authorization {
+    font-size: 20px;
+    color: #50e350;
+    width: 50%;
+    height: 60%;
+    text-align: justify;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    background-color: #f0f4ef;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text {
+    padding: 10px 30px;
+    appearance: none;
+    outline: 0;
+    background-color: inherit;
+    border: solid 3px black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#gameOverScreen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#recordList {
+    max-height: 50vh;
+    min-width: 40vh;
+    color: black;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+#gameOverScreen h1 {
+    color: black;
+}
+
+#gameOverScreen p {
+    color: black;
+    margin: 10px;
+}
+
+.popup {
+    margin-right: 10px;
+}
+
+.rules {
+    color: black;
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#recordList {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#usersRecords {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#usersRecords li {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#usersRecords li:hover {
+    background-color: #555;
+}
+
+#goBackButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    line-height: inherit;
+    font-size: 20px;
+    color: black;
+    width: auto;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    background-color: lightgreen;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+}

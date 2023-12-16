@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" id="theme" href="assets/css/styles.css"/>
+    <title>Весы</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas1"></canvas>
+<a href="../index.html">
+    <button id="goBackButton" class="button">&#8592; Назад</button>
+</a>
+<div class="authorization">
+    <h1>Определи вес</h1>
+    <p class="rules">Нужно уравновесить весы с помощью падающих цифр. Чем больше сумма цифр на весах, тем больше очков
+        вы получите!
+        Если вы не хотите ставить пролетающую цифру на весы, вы можете ее поставить на "столик" на ножке весов и взять
+        эту цифру позже.
+        Всего чисел на весах может быть 3, а на "столике" 2. Обратите внимание, что время ограничено.
+        Вы также можете отслеживать свои рекорды, но рекорд засчитывается, только если пройти все три уровня.
+        <br><br>
+        1 Уровень: Доступен столик, цифры падают по прямой<br>
+        2 Уровень: Игра без столика<br>
+        3 Уровень: Доступен столик, цифры смещаются по горизонтальной оси, если они выпадают за границы полотна, то
+        исчезают
+    </p>
+    <label for="name">
+        <input type="text" class="text" placeholder="Введи свое имя" id="name">
+    </label>
+    <a href="pages/level1.html" id="startLink">
+        <input type="button" class="button" value="Начать игру" id="startButton" disabled>
+    </a>
+    <input type="button" class="button" id="records" value="Рекорды">
+    <div id="recordList">
+        <ul id="usersRecords"></ul>
+        <br>
+        <input type="button" class="button" id="closeRecords" value="Закрыть">
+        <input type="button" class="button" id="clearRecords" value="Очистить">
+    </div>
+</div>
+
+<script src="assets/js/menu.js"></script>
+</body>
+</html>

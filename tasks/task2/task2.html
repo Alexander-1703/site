@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="task2.css">
+    <title>Задание 2</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="triangle"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Меню</a></li>
+            <li><a href="../../sections/aboutMe.html">Обо мне</a></li>
+            <li><a href="../../sections/tasks.html">Задания</a></li>
+            <li><a href="../../sections/courseWork.html">Курсовая работа</a></li>
+            <li><a href="../../sections/contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="sections">
+    <section id="task2">
+        <h1>Путешествие на транспорте</h1>
+        <div id="smileyContainer" class="smiley-container"></div>
+        <p id="resultText"></p>
+        <div class="transport-buttons">
+            <button id="carButton"><img src="pics/car.png" alt="Машина"></button>
+            <button id="motorcycleButton"><img src="pics/moto.png" alt="Мотоцикл"></button>
+        </div>
+        <input type="range" id="fuelRange" min="0" max="100" value="50">
+        <p id="fuelText">Выберите количество литров бензина: 50 л</p>
+        <script src="task2.js"></script>
+    </section>
+</main>
+
+<footer>
+    &copy; 2023 Гладышев Александр
+</footer>
+</body>
+</html>

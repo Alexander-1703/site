@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" id="theme" href='../assets/css/styles.css'/>
+    <title id="pageTitle">Уровень 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="score">
+    <a href="../menu.html" class="block">
+        <input type="button" id='mainMenu' class="button" value="Главное меню">
+    </a>
+    <div class="block nouserselect"><a>Уровень</a>
+        <div id="level">№2</div>
+    </div>
+    <div class="block nouserselect"><a>Таймер</a>
+        <div id="timer">0:00</div>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<div id="gameOverScreen">
+    <h1>Уровень завершен!</h1>
+    <p>Ваш результат: <span id="score"></span></p>
+    <input type="button" class="button popup" value="Заново" data-href="../pages/level2.html">
+    <a id="nextLink" href="../pages/level3.html">
+        <input type="button" class="button popup" id="nextButton" value="Следующий уровень">
+    </a>
+</div>
+<script type="module" src="../assets/js/level2.js"></script>
+</body>
+</html>

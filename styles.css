@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 10px black;
+}
+
+.header-region {
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 48px;
+    cursor: pointer;
+    position: relative;
+}
+
+.triangle,
+.triangle:before,
+.triangle:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.triangle {
+    border-bottom: 35px solid #0F52BA;
+    top:10px;
+}
+
+.triangle:before {
+    content: "";
+    border-top: 35px solid #50C878;
+    top: 40px;
+    left:3px;
+}
+
+.triangle:after {
+    content: "";
+    border-top: 35px solid #FF00FF;
+    top: 40px;
+    left:-40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+nav ul li a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+    text-shadow: 5px 5px 5px black;
+}
+
+main#mainPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+main.sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 10px black;
+    margin-top: 20px;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+section.onMainPage:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main#mainPage {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
